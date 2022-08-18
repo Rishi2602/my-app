@@ -8,7 +8,7 @@ import { render } from 'react-dom';
 const Weather = () => {
   const[city,setCity]=useState("Patna");
       function Value(){
-      fetch("https://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid=3d5747a9089314617a32ebae9a5cf3dd")
+      fetch("https://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid=4fed498c10157d0e8c27e1eaa31cd49e")
       .then((Response => Response.json()))
       .then((data) => {
         display(data);
